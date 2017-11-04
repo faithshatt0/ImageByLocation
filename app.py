@@ -9,10 +9,10 @@ import urllib2
 app = Flask(__name__, template_folder = "templates")
 
 # you can set key as config
-app.config['GOOGLEMAPS_KEY'] = "AIzaSyAZzeHhs-8JZ7i18MjFuM35dJHq70n3Hx4"
+app.config['GOOGLEMAPS_KEY'] = "###"
 
 # you can also pass key here
-GoogleMaps(app, key="AIzaSyAZzeHhs-8JZ7i18MjFuM35dJHq70n3Hx4")
+GoogleMaps(app, key="###")
 
 
 @app.route('/')
@@ -44,8 +44,8 @@ def main():
     if type(location) is not dict:
         return render_template('index.html')
         
-    api_key = "5f7d22e315be51962060984d9a821aff"
-    api_secret = "342d993331d1c8a7"
+    api_key = "###"
+    api_secret = "###"
     popular_image = ""
         
     latitude = location['lat']
